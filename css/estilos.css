@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+
+body{
+
+	overflow-x: hidden;
+
+}
+/*CABECERA*/
+nav ul li{
+	display: inline-block;
+}
+
+nav ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 10px 15px;
+	margin:8px;
+	color: #212020;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+nav ul li:first-child a{
+	background: #06005C;
+	color:#fff;
+}
+
+/*BANNER*/
+
+
+/*.baner img{
+
+	width: 100%;
+}*/
+
+/*BIEVENIDOS*/
+
+.bienvenidos{
+	margin-top: -2px;
+	background: #3bbb50;
+	padding: 16px;
+}
+
+.bienvenidos h1{
+
+	margin-top: 10px;
+	color: #fff;
+}
+
+.bienvenidos p{
+
+	margin-top:15px;
+	font-size: 25px;
+	color:#000;
+}
+
+/*VENTAJAS*/
+
+.ventajas{
+
+background: #FCFCFC;
+padding-bottom: 30px;
+}
+
+.ventajas h1{
+
+	color:#191919;
+	margin-top:25px;
+	margin-bottom: 15px;
+}
+
+.ventajas h2 a{
+	text-decoration: none;
+	color:#FDFDFD;
+}
+.equipo{background:#FF5F5F; padding: 10px; margin: 10px;}
+.impresora{background:#84D57C;padding: 10px;margin: 10px; }
+.ahorro{background:#CAC64E;padding: 10px; margin: 10px;}
+.asistencia{background:#A6C450;padding: 10px;margin: 10px;}
+
+.ventajas p{
+
+	color: #ffff;
+	margin-top: 5px;
+}
+
+/*BENEFICIOS*/
+
+.beneficios{
+
+	padding: 30px;
+	background: #4FA067;
+}
+
+.beneficio-item{
+	border: 1px solid #AEFBC5;
+	border-radius: 5px;
+	padding: 30px 30px;
+	
+
+}
+
+.beneficio-item p{
+	color: #fff;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.beneficio-item a{
+	margin: 10px;
+	text-decoration: none;
+	display: inline-block;
+	padding:10px 20px;
+	background: #000;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 5px;
+	border :1px solid #000;
+}
+
+/*MIN BANER*/
+
+.min-baner{
+	color: #fff;
+	height: 250px;
+}
+
+
+.min-baner h1{
+	margin-top:40px;
+	font-size: 50px;
+}
+
+.min-baner h1 span{
+
+	color: #58CF7B;
+}
+
+.min-baner p{
+	font-size: 40px;
+	margin-top:10px;
+	
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.min-baner a{
+	text-decoration: none;
+	display: inline-block;
+	margin:15px;
+	color: #fff;
+	padding: 10px 20px;
+	background: #58CF7B;
+	border: 1px solid #58CF7B;
+	border-radius: 5px;
+}
+/*PARTNERS*/
+
+
+.socios{
+	padding:20px;
+}
+
+.socios h4{
+
+	margin-top:10px;
+	margin-bottom: 20px;
+	font-size: 23px;
+}
+
+.socios p{
+	font-size: 15px;
+	line-height: 20px;
+	margin-top: -15px;
+	color: #404040;
+}
+
+/*CONTACTO*/
+
+.contacto{
+	height: 230px;
+	color: #fff;
+}
+
+.contacto h3{
+margin-top: 13px;
+font-size: 30px;
+color:#58CF7B;
+
+}
+
+.contacto p{
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 22px;
+
+}
+
+.contacto p span{
+color:#58CF7B;
+}
+
+/*FOOTER*/
+
+footer{
+	padding: 10px;
+}
+
+footer p a{
+
+	color:#58CF7B;
+	text-decoration: none;
+}
+
+
+/*CABCERA FIJA*/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000000000;
+  background: #fff;
+}
+
+/*MENU RESPONSIVO*/
+
+.header #btn-menu{
+display: none;
+
+}
+
+.header label{
+
+	display: none;
+	width: 45px;
+	height: 45px;
+	padding: 10px;
+	border-right: 1px solid #fff;
+}
+
+.header label:hover{
+
+	cursor: pointer;
+	background: rgba(0,0,0,0.3);
+}
+
+.header .menu ul{
+	
+	padding: 0px;
+	margin:0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+
+}
+
+
+/*MEDIA QUERYS*/
+
+@media (max-width: 710px){
+
+/*.menu ul li{
+	display: none;
+}*/
+
+.min-baner{
+	
+	height: 350px;
+}
+
+.contacto{
+
+	height: 300px;
+	
+}
+
+/*menu*/
+
+.header label{
+	display: block;
+	margin-left: 89%;
+	margin-top: -110px;
+}
+
+.header .menu{
+	position: absolute;
+	background: rgba(255,255,255,0.9);
+	width: 50%;
+	margin-left: -50%;
+	margin-top:180px;
+	transition: all 0.5s;
+	z-index: 1000000000000000;
+	
+}
+
+.header .menu ul{
+
+	flex-direction: column;
+}
+
+.header .menu li{
+	border-top:1px solid #06005C;
+}
+
+
+#btn-menu:checked ~ .menu{
+	margin-left:0px;
+	margin-top: 180px;
+}
+
+
+
+
+
+}
+
+
